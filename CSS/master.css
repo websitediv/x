@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
+* {
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://scontent.fcai20-6.fna.fbcdn.net/v/t1.15752-9/372839030_1394326168092602_1402313196268303345_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=DCWE1bLtgiIAX_8uydK&_nc_ht=scontent.fcai20-6.fna&oh=03_AdSOY0CvinLmrinCa9zkcTb-qRfhakYevBFQsrIL4XnSbw&oe=65299B1C);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    background-color: rgba(18 18 18);
+}
+
+.main {
+    position: relative;
+    backdrop-filter: blur(19px);
+    box-shadow: 0px 0px 20px rgb(20, 20, 20) inset;
+    border: 2px solid rgb(100, 0, 255);
+    border-radius: 10px;
+    width: 95%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.0);
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    text-shadow: 4px -3px 0px rgb(100, 0, 255);
+    font-size: 2.2em;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+button {
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 7px 22px;
+    cursor: pointer;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 4px;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+
+}
+
+#choices button {
+    background-image: linear-gradient(45deg, rgba(100 0 255), rgba(150 0 255));
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    padding-bottom: 10px;
+    height: 100px;
+    box-shadow: 0px 0px 10px rgb(10, 10, 10);
+    border-bottom: 1px solid rgba(100 0 255);
+}
+
+footer {
+    border-top: 1px solid rgba(100 0 255);
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 20px;
+    box-shadow: 0px 0px 10px rgb(10, 10, 10);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-info {
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    border-radius: 0px 0px 50px 50px;
+}
+
+#muneBtnSmoll {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    padding-top: 3px;
+    font-size: 1.8em;
+    background-color: rgba(100 0 255 / 5%);
+    color: rgba(100 0 255);
+    box-shadow: none;
+    position: fixed;
+    border: none;
+    z-index: 99999;
+    border-top: 2px solid rgba(100 0 255);
+    border-right: 2px solid rgba(100 0 255);
+    border-radius: 0px 10px 0px 10px;
+    left: 0px;
+    bottom: -10px;
+    display: none;
+    outline: 0px solid rgb(100, 0, 255);
+}
+
+.heart {
+    margin-right: 4px;
+    color: red;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+.cardbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardline {
+    background-color: transparent;
+}
+
+.card {
+    border-radius: 4px;
+    border: 2px solid rgb(100, 0, 255);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    box-shadow: 0px 0px 20px rgba(0 0 0 / 70%);
+    margin: 20px 10px;
+    position: relative;
+    background-color: rgba(100 0 255 / 20%);
+}
+
+.Heading {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-bottom: 2px solid rgb(100, 0, 255);
+    padding: 10px 0;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(100 0 255 / 20%);
+}
+
+.card h2 {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 100%;
+    font-size: 1.2em;
+    text-shadow: 0px 3px 0px rgb(100, 0, 250);
+    transform: translate(-50%, 0);
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 100px;
+}
+
+.startbox {
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(18 18 18);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.6) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.startbox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px 20px 50px 50px;
+    box-shadow: 0px 0px 20px 10px rgba(0 0 0 / 70%);
+    margin-top: -60px;
+}
+
+.big {
+    border: 2px solid white;
+    height: 25px;
+    width: 92%;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+    box-shadow: 0px 0px 10px black;
+}
+
+.tiny {
+    background-color: rgba(100 0 255);
+    height: 25px;
+    width: 0%;
+    animation: started 6.5s forwards ease-in-out;
+    box-shadow: 0px 0px 10px 10px rgba(100 0 255);
+}
+
+@keyframes started {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 102%;
+    }
+}
+
+.startbox h4 {
+    font-size: 1.3em;
+    animation: texted 700ms infinite linear alternate;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+@keyframes texted {
+    0% {
+        color: rgba(100 0 255);
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@media (max-height:620px) {
+    header {
+        display: none;
+    }
+
+    #muneBtnSmoll {
+        display: flex;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+.fullScreenBox {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0 0 0 / 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#fullscreen-button {
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 95%;
+    height: 420px;
+    font-size: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#fullscreen-button::before {
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    content: "ملىء الشاشة";
+}
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 4px;
+    position: relative;
+    font-size: 1.3em;
+    background-color: transparent;
+    transition: 0.2s;
+    border: 1px solid white;
+    outline: 0px solid rgb(100, 0, 255);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="icon" href="./Image/img.png">
+    <title>سؤال وايجابة</title>
+    <meta charset="UTF-8">
+    <style>
+        .main {
+            height: 440px;
+        }
+
+        @media (max-height:640px) {
+            header {
+                display: none;
+            }
+
+            .main {
+                height: 500px;
+            }
+
+            .Heading {
+                height: 120px;
+                padding-top: 30px;
+            }
+
+            .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="startbox" class="startbox">
+        <div style="width: 100%;">
+            <img id="startimg" src="./Image/img.png">
+            <div class="big">
+                <div class="tiny"></div>
+            </div>
+            <h4 style="font-family: 'Black Ops One';">L O A D I N G ..</h4>
+        </div>
+    </div>
+    <header style="height: 100px;">
+        <img src="./Image/img.png">
+    </header>
+    <div style="padding-top: 85px;" id="main" class="main">
+        <h1 class="Heading">لعبة سؤال وايجابة</h1>
+        <div class="cardbox">
+            <div class="cardline">
+                <div id="card1" class="card">
+                    <img style="margin-top: 7px;" src="./Image/Football.png">
+                    <h2>كـرة الـقـدم</h2>
+                </div>
+                <div id="card2" class="card">
+                    <img style="margin-top: 10px;border-radius:0%; width:80px;height:90px;" src="./Image/School.png">
+                    <h2>الـدراسـة</h2>
+                </div>
+            </div>
+            <div class="cardline">
+                <div id="card4" class="card">
+                    <img style="margin-top: 15px;border-radius:0%;width: 80px;height: 80px;" src="./Image/Friends.png">
+                    <h2>أسـئـلـة دينية</h2>
+                </div>
+                <div id="card3" class="card">
+                    <img style="margin-top: 10px;width: 90px;height: 90px;border-radius: 0;" src="./Image/Other.png">
+                    <h2>أسـئـلـة عـامـة</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="justify-content: center;height: 100px;" class="footer">
+        <p>© جميع الحقوق محفوظة | 2023</p>
+    </footer>
+    <div id="audioBox"></div>
+    <script src="JS/HubJS.js"></script>
+</body>
+
+</html>
